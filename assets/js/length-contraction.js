@@ -46,16 +46,23 @@ document.addEventListener("DOMContentLoaded", () => {
         <span>Velocity to speed of light ratio: <strong>${velocityRatio}</strong></span><br/><br/>
         <span>Observed Length: <strong>${contractedLength.toFixed(6)} meters</strong></span><br/><br/>
         <span>
-          Relativistic Length Contraction Equation:<br> </br>
-          <em>L = L₀ × √(1 - v² / c²)</em>
+          Relativistic Length Contraction Equation:<br/><br/>
+          $$ L = L_0 \\times \\sqrt{1 - \\frac{v^2}{c^2}} $$
         </span>
-        <br/><br/>
         <br/><br/>
         <br/><br/>
         <br/><br/>
         <br/><br/>
       </div>
     `;
+
+    // Render KaTeX for the new content
+    renderMathInElement(resultDiv, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
   });
 
   clearBtn.addEventListener("click", () => {
@@ -63,8 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     resultDiv.innerHTML = "Speed of light: 299,792.4580 km/s";
   });
 
+  /*
   // Optional visitor tracking
-/*   fetch("/serversavevisitor/einstein_length_cont", { method: "POST" }).catch((e) =>
+  fetch("/serversavevisitor/einstein_length_cont", { method: "POST" }).catch((e) =>
     console.error("Visitor logging failed:", e)
-  ); */
+  );
+  */
 });

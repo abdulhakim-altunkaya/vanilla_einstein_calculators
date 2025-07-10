@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultDiv.innerHTML = `
       <div style="text-align:left">
         <div style="margin: 10px 0; font-size: 1.2em;">
-          E<sub>joules</sub> = m<sub>kg</sub> × (3 × 10<sup>8</sup>)<sup>2</sup>
+          $$ E_{\\text{joules}} = m_{\\text{kg}} \\times (3 \\times 10^8)^2 $$
         </div>
         <p><strong>Energy in Joules:</strong> ${energyJoules.toFixed(2)} J</p>
         <p><strong>Energy in Kilowatt-hours:</strong> ${energyKWh.toFixed(8)} kWh</p>
@@ -46,22 +46,33 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Equivalent in Kilograms of TNT:</strong> ${kgTNT.toFixed(2)}</p>
         <p><strong>Equivalent in Hiroshima Atomic Bombs:</strong> ${hiroshimaBombs.toFixed(5)}</p>
         <p><strong>Equivalent in Tsar Hydrogen Bombs:</strong> ${tsarBombs.toFixed(5)}</p>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     `;
+
+    // Render KaTeX on the newly inserted content
+    renderMathInElement(resultDiv, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
   });
 
   clearBtn.addEventListener("click", () => {
     form.reset();
     resultDiv.innerHTML = "Energy results will appear here...";
   });
-
+  
+  /*
   // Optional visitor tracking
   fetch("/serversavevisitor/einstein_masstoenergy", { method: "POST" }).catch((e) =>
     console.error("Visitor logging failed:", e)
   );
+  */
 });

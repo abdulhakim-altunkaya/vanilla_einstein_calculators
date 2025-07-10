@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
          (KE: kinetic energy, m: rest mass in grams, y: Lorentz factor, c: speed of light km/s):</strong></div>
         <div> $$ KE = (γ - 1) mc² $$</div>
         <br/>
-        <div>In relativity, the total energy of an object is given by equation below. 
+        <div>In relativity, the total energy (TE) of an object is given by equation below. 
           For an object at rest, Lorentz factor is 1.
           For an object moving at relativistic speeds, Lorentz factor grows very large.</div>
-        <div>$$ E_total = γmc² $$</div>
+        <div>$$ TE = γmc² $$</div>
         <br/>
         <div>This total energy includes both the rest energy and the energy due to motion (kinetic energy). 
           To isolate the kinetic energy, we subtract the rest energy from the total energy:</div>
@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </div>
     `;
+    renderMathInElement(resultArea);
   });
 
   clearButton.addEventListener('click', function () {

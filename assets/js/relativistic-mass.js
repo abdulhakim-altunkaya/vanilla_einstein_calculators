@@ -73,6 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     resultDiv.innerHTML = resultHTML;
+
+    // Trigger KaTeX rendering on the new content:
+    renderMathInElement(resultDiv, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
   });
 
   clearBtn.addEventListener("click", () => {
