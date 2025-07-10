@@ -10,16 +10,14 @@
         margin-top: 20px;
         margin-left: 12px;
     }
-    /*<button class="button1">COPY ME</button>*/
-    @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
     .button101{
-        width: 150px;
-        height: 55px;
+        width: 120px;
+        height: 40px;
         font-size: 20px;
         background-color: red;
         color: white;
-        font-size: 25px;
-        font-family: "Days One", sans-serif;
+        font-size: 20px;
+        font-family: "Fredoka One", sans-serif;
         border-radius: 7px;
         padding: 5px;
         user-select: none;

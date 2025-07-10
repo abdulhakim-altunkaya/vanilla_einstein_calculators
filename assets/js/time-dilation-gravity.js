@@ -36,14 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const html = `
       <div style="text-align:left">
-        <span>Mass of Object: ${mSolar} Solar masses</span><br>
-        <span>Radius: ${rKm} km</span><br>
-        <span>Schwarzschild Radius: ${(schwarzschildRadius/1000).toFixed(6)} km</span><br><br>
-        <span>Distant Observer Time: <strong>${t} s</strong></span><br>
-        <span>Time near Object: <strong>${tNear.toFixed(6)} s</strong></span><br>
-        <span>Time difference: <strong>${difference.toFixed(6)} s</strong></span><br><br>
+        <span>Mass of Object: ${mSolar} Solar masses</span> <br/>
+        <span>Radius: ${rKm} km</span><br/>
+        <span>Schwarzschild Radius: ${(schwarzschildRadius/1000).toFixed(6)} km</span><br/><br/>
+        <span>Distant Observer Time: <strong>${t} s</strong></span><br/>
+        <span>Time near Object: <strong>${tNear.toFixed(6)} s</strong></span><br/>
+        <span>Time difference: <strong>${difference.toFixed(6)} s</strong></span><br/><br/>
         <span>Gravitational Time Dilation Equation:</span>
         <div id="latexEq" style="margin-top:8px;"></div>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
       </div>
     `;
     resultArea.innerHTML = html;

@@ -21,6 +21,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');/*Baumans*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');/*Audiowide*/
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 /*Nunito Maven Pro Righteous Monda Concert One Courgette Fredoka One Lobster Nerko One Poppins Playwrite HU*/
 /*Agbalumo     Style Script     Bungee Tint     Paytone One     Nunito  DM Sans      Plus Jakarta    Manrope*/
 
@@ -46,24 +48,24 @@
         font-size: 34px;
         margin-top: 0; /* Remove default h2 margin */
         color: white;
-        font-family:"Baumans" ;
+          font-family: "Tourney", sans-serif;
     }
     .topArea {
         padding: 20px;
-        background-color: #4172e6;
         color: white;
+        text-align: center;
+        background-image: linear-gradient(to right top, #006395, #008f95);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow */
     }
     .contentArea {
         padding: 20px;
         flex-grow: 2;
         display: flex;
         flex-direction: column;
-        background-color: aliceblue;
     }
     
     .bottomArea {
         padding: 15px;
-        background-color: aliceblue;;
         color: #000000;  
     }
     .footerArea {
@@ -147,5 +149,4 @@
         flex-direction: column;
         gap: 6px;
     }
-    
 }
