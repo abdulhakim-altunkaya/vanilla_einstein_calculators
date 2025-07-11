@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     resultArea.innerHTML = `
-      <div class="relativisticKineticMainDiv" style="text-align: left">
+      <div class="resultTextJS">
         <span>Rest Mass: ${(m0 * 1000).toFixed(2)} grams</span><br><br>
         <span>Velocity: ${vKm} km/s</span><br>
         <span>Speed of light: 299,792.4580 km/s</span><br>
@@ -64,27 +64,29 @@ document.addEventListener('DOMContentLoaded', function () {
         <p><strong>Equivalent in Hiroshima Atomic Bombs:</strong> ${energy.hiroshimaBombs} bombs</p>
         <p><strong>Equivalent in Tsar Hydrogen Bombs:</strong> ${energy.tsarBombs} bombs</p><br>
 
-        <div><strong>Relativistic Kinetic Energy Equation
-         (KE: kinetic energy, m: rest mass in grams, y: Lorentz factor, c: speed of light km/s):</strong></div>
+        <p><strong>Relativistic Kinetic Energy Equation
+        (KE: kinetic energy, m: rest mass in grams, y: Lorentz factor, c: speed of light km/s):</strong></p>
         <div> $$ KE = (γ - 1) mc² $$</div>
         <br/>
-        <div>In relativity, the total energy (TE) of an object is given by equation below. 
+        <p class="resultTextJSparagraphs">In relativity, the total energy (TE) of an object is given by equation below. 
           For an object at rest, Lorentz factor is 1.
-          For an object moving at relativistic speeds, Lorentz factor grows very large.</div>
+          For an object moving at relativistic speeds, Lorentz factor grows very large.</p>
         <div>$$ TE = γmc² $$</div>
         <br/>
-        <div>This total energy includes both the rest energy and the energy due to motion (kinetic energy). 
-          To isolate the kinetic energy, we subtract the rest energy from the total energy:</div>
+        <p class="resultTextJSparagraphs">This total energy includes both the rest energy and the energy due to motion (kinetic energy). 
+          To isolate the kinetic energy, we subtract the rest energy from the total energy:</p>
         <div> $$ KE = γmc² - mc² = (γ - 1)mc² $$</div>
         <br/>
-        <div>
+        <p class="resultTextJSparagraphs">
           If an object moving at relativistic speeds hits the Earth, approximately 90% of its kinetic energy will
           convert into an explosion (heat, shockwaves, seismic waves, etc). Atmospheric drag for objects moving at 
           relativistic speed is negligible. During these type of impacts, rest enegy of the object is not converted into
           explosion, only its kinetic energy is converted to explosion (90%). For impact scenarios where kinetic energy 
           and rest energy together convert into explosion, the impact should be accompanied by a type of nuclear detonation or 
           matter-antimatter annihilation.
-        </div>
+        </p>
+
+
         <br/>
         <br/>
         <br/>

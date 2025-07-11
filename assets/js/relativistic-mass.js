@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const velocityRatio = (velocity / c).toFixed(20);
 
     const resultHTML = `
-      <div class="relativisticMassMainDiv" style="text-align: left;">
+      <div class="resultTextJS">
         <span>Rest Mass: ${restMass} grams</span><br/><br/>
         <span>Velocity: ${velocityKm} km/s</span><br/>
         <span>Speed of light: 299,792.4580 km/s</span><br/>
@@ -52,18 +52,18 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Relativistic Mass in Gigatons:</strong> ${(relativisticMass * GRAMS_TO_GIGATON).toFixed(8)} gigatons</p><br/>
         <span>Relativistic Mass Equation:</span><br/> <br/>
         <em>$$ m(v) = m₀ / √(1 - v² / c²) $$</em>
-        <div class="resultAreaRelativisticMass">
-          <p>As an object approaches the speed of light, its relativistic mass (in other words ineartial mass 
+
+          <p class="resultTextJSparagraphs">As an object approaches the speed of light, its relativistic mass (in other words ineartial mass 
           at relativistic speeds) increases significantly. As an object moves faster, it gains more kinetic energy. 
           In relativity, this extra energy contributes to the object's inertia, which is interpreted as an increase 
           in its relativistic mass. The closer an object gets to the speed of light, the more energy is required 
           to keep accelerating it, because the relativistic mass increases dramatically.</p>
-          <p>However, keep in mind that the relations between gravitational waves, inertial mass, rest mass 
+          <p class="resultTextJSparagraphs">However, keep in mind that the relations between gravitational waves, inertial mass, rest mass 
           and gravitational mass at relativistic speeds are not fully explored. And Einstein later distanced 
           himself from "relativistic mass" concept and said "energy increases" (Relativistic Kinetic Energy 
           Calculator). So, when it is said "mass increases" do not directly understand it as its size or 
           weight increases. This area is still open to your ideas.</p>
-        </div>
+
         <br/><br/>
         <br/><br/>
         <br/><br/>

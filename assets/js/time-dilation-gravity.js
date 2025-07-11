@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const difference = t - tNear;
 
     const html = `
-      <div style="text-align:left">
+      <div class="resultTextJS">
         <span>Mass of Object: ${mSolar} Solar masses</span> <br/>
         <span>Radius: ${rKm} km</span><br/>
         <span>Schwarzschild Radius: ${(schwarzschildRadius/1000).toFixed(6)} km</span><br/><br/>

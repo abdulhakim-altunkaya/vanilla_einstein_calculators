@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const velocityRatio = (spaceshipVelocity / speedLight).toFixed(20);
 
     const resultHTML = `
-      <div style="text-align: left">
+      <div class="resultTextJS">
         <span>Speed of Light: ${speedLight}</span><br/>
         <span>Velocity to speed of light ratio: <strong>${velocityRatio}</strong></span><br/><br/>
         <span>Ratio of Spaceship Velocity to Light: ${side2}%</span><br/>

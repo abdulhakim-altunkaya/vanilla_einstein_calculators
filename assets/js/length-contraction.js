@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contractedLength = restLength * factor;
 
     resultDiv.innerHTML = `
-      <div style="text-align:left">
+      <div class="resultTextJS">
         <span>Rest Length: ${restLength} meters</span><br/>
         <span>Speed of light: 299,792.4580 km/s</span><br/>
         <span>Velocity to speed of light ratio: <strong>${velocityRatio}</strong></span><br/><br/>

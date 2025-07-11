@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tsarBombs = energyJoules / energyPerTsarBomb;
 
     resultDiv.innerHTML = `
-      <div style="text-align:left">
+      <div class="resultTextJS">
         <div style="margin: 10px 0; font-size: 1.2em;">
           $$ E_{\\text{joules}} = m_{\\text{kg}} \\times (3 \\times 10^8)^2 $$
         </div>
