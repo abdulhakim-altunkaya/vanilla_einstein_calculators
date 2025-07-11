@@ -85,6 +85,13 @@ document.addEventListener('DOMContentLoaded', function () {
           and rest energy together convert into explosion, the impact should be accompanied by a type of nuclear detonation or 
           matter-antimatter annihilation.
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
     `;
     renderMathInElement(resultArea);
@@ -97,4 +104,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initial value
   resultArea.textContent = 'Speed of light: 299,792.4580 km/s';
+    // Axios-based visitor tracking
+  async function logVisitor() {
+    try {
+      const response = await axios.post(`https://www.ipradar.org/api/save-visitor/einstein/relativistic_kinetic`, {});
+      console.log("Visitor log response:", response.data);
+    } catch (error) {
+      if (error.response?.status === 429) {
+        console.warn("Visitor already logged recently; skipping.");
+      } else {
+        console.error("Visitor log error:", error.message);
+      }
+    }
+  }
+
+  logVisitor();
 });

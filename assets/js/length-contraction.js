@@ -70,10 +70,19 @@ document.addEventListener("DOMContentLoaded", () => {
     resultDiv.innerHTML = "Speed of light: 299,792.4580 km/s";
   });
 
-  /*
-  // Optional visitor tracking
-  fetch("/serversavevisitor/einstein_length_cont", { method: "POST" }).catch((e) =>
-    console.error("Visitor logging failed:", e)
-  );
-  */
+  // Axios-based visitor tracking
+  async function logVisitor() {
+    try {
+      const response = await axios.post(`https://www.ipradar.org/api/save-visitor/einstein/length_contraction`, {});
+      console.log("Visitor log response:", response.data);
+    } catch (error) {
+      if (error.response?.status === 429) {
+        console.warn("Visitor already logged recently; skipping.");
+      } else {
+        console.error("Visitor log error:", error.message);
+      }
+    }
+  }
+
+  logVisitor();
 });
