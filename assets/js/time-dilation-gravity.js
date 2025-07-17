@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Axios-based visitor logging
   async function logVisitor() {
     try {
-      const response = await axios.post(`https://www.ipradar.org/api/save-visitor/einstein/dilation_gravity`, {});
+      const response = await axios.post(`https://www.eumaps.org/api/save-visitor/einstein/dilation_gravity`, {});
       console.log("Visitor log response:", response.data);
     } catch (error) {
       if (error.response?.status === 429) {
