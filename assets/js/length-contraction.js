@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Axios-based visitor tracking
   async function logVisitor() {
     try {
-      const response = await axios.post(`https://www.eumaps.org/api/save-visitor/einstein/length_contraction`, {});
+      const response = await axios.post(`https://www.eumaps.org/api/save-visitor/einstein?sectionName=length_contraction`, {});
       console.log("Visitor log response:", response.data);
     } catch (error) {
       if (error.response?.status === 429) {

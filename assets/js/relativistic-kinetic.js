@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Axios-based visitor tracking
   async function logVisitor() {
     try {
-      const response = await axios.post(`https://www.eumaps.org/api/save-visitor/einstein/relativistic_kinetic`, {});
+      const response = await axios.post(`https://www.eumaps.org/api/save-visitor/einstein?sectionName=relativistic_kinetic`, {});
       console.log("Visitor log response:", response.data);
     } catch (error) {
       if (error.response?.status === 429) {
