@@ -1,0 +1,22 @@
+
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Einstein Calculators",
+  "url": "https://einsteincalculators.com/",
+  "description": "Explore Einstein Calculators: mass-energy converter, relativistic kinetic energy calculator, time dilation calculators, gravitational time dilation calculator, relativistic mass calculator, and length contraction calculator.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Einstein Calculators",
+    "url": "https://yourdomain.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://einsteincalculators.com/assets/icons/atom.svg"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://einsteincalculators.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}

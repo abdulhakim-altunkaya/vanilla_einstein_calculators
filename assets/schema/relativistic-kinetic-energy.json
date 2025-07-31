@@ -1,0 +1,91 @@
+
+{
+  "@context": "https://schema.org",
+  "@type": ["WebApplication", "HowToTool", "LearningResource"],
+  "name": "Relativistic Kinetic Energy Calculator",
+  "url": "https://einsteincalculators.com/",
+  "description": "Calculate the kinetic energy of objects moving at relativistic speeds using Einstein's special relativity equations. Input rest mass and velocity to compute relativistic kinetic energy.",
+  "applicationCategory": ["PhysicsCalculator", "EducationalTool"],
+  "operatingSystem": "Web browser",
+  "keywords": "relativistic energy, kinetic energy calculator, special relativity, physics calculator, Einstein",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free online physics calculator"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Einstein Calculators",
+    "url": "https://einsteincalculators.com/",
+    "logo": "https://einsteincalculators.com/assets/icons/atom.svg",
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Special_relativity",
+      "https://en.wikipedia.org/wiki/Kinetic_energy"
+    ]
+  },
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "http://schema.org/CalculateAction",
+    "userInteractionCount": "1000"
+  },
+  "potentialAction": {
+    "@type": "CalculateAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://einsteincalculators.com/",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "query-input": "required name=restMass name=velocity"
+  },
+  "howTo": {
+    "@type": "HowTo",
+    "name": "How to Calculate Relativistic Kinetic Energy",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "text": "Enter the rest mass of the object in grams",
+        "name": "Enter rest mass"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Enter the velocity in kilometers per second (km/s)",
+        "name": "Enter velocity"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Click the Calculate button to compute the relativistic kinetic energy",
+        "name": "Calculate"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "View the results showing the kinetic energy relative to the speed of light (299,792.458 km/s)",
+        "name": "View results"
+      }
+    ],
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "value": "0",
+      "currency": "USD"
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Relativistic Kinetic Energy",
+    "description": "The kinetic energy of an object moving at a significant fraction of the speed of light, requiring special relativity calculations",
+    "sameAs": "https://en.wikipedia.org/wiki/Kinetic_energy#Relativistic_kinetic_energy_of_rigid_bodies"
+  },
+  "educationalAlignment": {
+    "@type": "AlignmentObject",
+    "alignmentType": "educationalSubject",
+    "targetName": "Relativistic Physics",
+    "targetUrl": "https://en.wikipedia.org/wiki/Special_relativity"
+  },
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student, teacher, physics enthusiast"
+  }
+}

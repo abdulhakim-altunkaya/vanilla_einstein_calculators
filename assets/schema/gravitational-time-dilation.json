@@ -1,0 +1,69 @@
+
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Gravitational Time Dilation Calculator",
+  "description": "Calculate time dilation effects near massive objects using Einstein's theory of general relativity. Input mass, radius, and observer time to compute gravitational time dilation.",
+  "applicationCategory": "PhysicsCalculator",
+  "operatingSystem": "Web browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free online physics calculator"
+  },
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "http://schema.org/CalculateAction",
+    "userInteractionCount": "1000"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Einstein Calculators",
+    "url": "https://einsteincalculators.com"
+  },
+  "potentialAction": {
+    "@type": "CalculateAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://einsteincalculators.com/gravitational-time-dilation",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "query-input": "required name=observerTime name=massOfObject name=radius"
+  },
+  "howTo": {
+    "@type": "HowTo",
+    "name": "How to use the Gravitational Time Dilation Calculator",
+    "description": "Step-by-step instructions for calculating gravitational time dilation effects",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "text": "Enter the time passed in seconds in the first input field",
+        "name": "Enter observer time"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Enter the mass of the object in solar masses in the second input field",
+        "name": "Enter mass"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Enter the radius (distance from the object) in kilometers in the third input field",
+        "name": "Enter radius"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Click the Calculate button to compute the gravitational time dilation effect",
+        "name": "Calculate"
+      }
+    ]
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "General Relativity",
+    "description": "Einstein's theory describing gravity as a curvature of spacetime caused by mass and energy"
+  }
+}

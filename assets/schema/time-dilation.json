@@ -1,0 +1,97 @@
+
+{
+  "@context": "https://schema.org",
+  "@type": ["WebApplication", "LearningResource", "HowToTool"],
+  "name": "Time Dilation Calculator",
+  "url": "https://einsteincalculators.com/time-dilation",
+  "description": "Calculate relativistic time dilation effects for objects moving at significant fractions of light speed using Einstein's special relativity equations. Input spaceship time and velocity to compute time dilation relative to Earth observers.",
+  "applicationCategory": ["PhysicsCalculator", "EducationalTool"],
+  "operatingSystem": "Web browser",
+  "keywords": "time dilation, special relativity, Einstein calculator, physics tool, relativistic effects",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free online physics calculator"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Einstein Calculators",
+    "url": "https://einsteincalculators.com/",
+    "logo": "https://einsteincalculators.com/assets/icons/atom.svg",
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Time_dilation",
+      "https://en.wikipedia.org/wiki/Special_relativity"
+    ]
+  },
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "http://schema.org/CalculateAction",
+    "userInteractionCount": "1000"
+  },
+  "potentialAction": {
+    "@type": "CalculateAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://einsteincalculators.com/time-dilation",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "query-input": "required name=spaceshipTime name=spaceshipVelocity"
+  },
+  "howTo": {
+    "@type": "HowTo",
+    "name": "How to Calculate Relativistic Time Dilation",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "text": "Enter the elapsed time experienced on the spaceship (in seconds)",
+        "name": "Enter spaceship time"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Enter the spaceship's velocity relative to Earth (in km/second)",
+        "name": "Enter velocity"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Click Calculate to determine the time experienced by Earth observers",
+        "name": "Calculate"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "View results showing time dilation effects relative to light speed (299,792.458 km/s)",
+        "name": "View results"
+      }
+    ],
+    "supply": {
+      "@type": "HowToSupply",
+      "name": "Velocity input",
+      "required": true,
+      "itemListElement": "Must be less than speed of light (299,792.458 km/s)"
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Time Dilation",
+    "description": "The relativistic phenomenon where time measured in different inertial frames will differ when objects move at significant fractions of light speed",
+    "sameAs": "https://en.wikipedia.org/wiki/Time_dilation"
+  },
+  "educationalAlignment": {
+    "@type": "AlignmentObject",
+    "alignmentType": "educationalSubject",
+    "targetName": "Relativistic Physics",
+    "targetUrl": "https://en.wikipedia.org/wiki/Special_relativity",
+    "educationalFramework": "Modern Physics"
+  },
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student, educator, physicist, science enthusiast",
+    "audienceType": "STEM learners"
+  },
+  "timeRequired": "PT2M",
+  "difficulty": "Intermediate",
+  "educationalLevel": "high school to university level"
+}
