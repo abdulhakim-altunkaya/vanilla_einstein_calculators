@@ -1,10 +1,9 @@
 
 /* Media query for mobile screens */
 @media (min-width: 781px) {
-    .mainAreasMainComponents {
-        padding-top: 40px;
-    }
+
     .convertersMain{   
+        padding-top: 40px;
         margin: 12px;
     }    
     .convertersIconsMainArea {
@@ -59,7 +58,7 @@
 
 /* Media query for mobile screens */
 @media (max-width: 780px) {
-    .mainAreasMainComponents {
+    .convertersMain {
         padding-top: 10px;
         display: flex;
         flex-direction: column;

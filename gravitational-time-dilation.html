@@ -17,15 +17,14 @@
   <script defer src="./assets/js/time-dilation-gravity.js"></script>
 </head>
 <body>
-  <div class="mainArea">
+  <main class="mainArea">
     <!-- TOP AREA -->
-    <div class="topArea">  
-        <h2 onclick="location.href='./index.html'">Einstein Calculators</h2>
-    </div>
+    <header class="topArea">  
+      <h2><a href="https://einsteincalculators.com/index.html">Einstein Calculators</a></h2>
+    </header>
 
     <!-- MAIN CONTENT -->
-    <div class="contentArea">
-      <main>
+    <section class="contentArea">
         <h1 class="formHeader">Gravitational Time Dilation Calculator</h1>
         <form id="timeDilationForm" class="formInvestment">
           <input class="inputFields" type="number" name="observerTime" min="1" required />
@@ -42,8 +41,7 @@
         </form>
 
         <div id="resultArea" class="resultAreaInvestment" aria-live="polite"></div>
-      </main>
-    </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footerArea">
@@ -55,6 +53,6 @@
       </p>
     </footer>
     
-  </div>
+  </main>
 </body>
 </html>
