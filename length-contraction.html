@@ -13,50 +13,43 @@
   <!-- KaTeX JS & Auto-render -->
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
-
-  <script type="application/ld+json" src="./assets/schema/length-contraction.json"></script>
-  <script defer src="./assets/js/length-contraction.js"></script>
 </head>
 <body>
   <div class="mainArea">
     <!-- TOP AREA -->
-    <div class="topArea">  
-        <h2 onclick="location.href='./index.html'">Einstein Calculators</h2>
-    </div>
+    <header class="topArea">  
+      <h2 onclick="location.href='./index.html'">Einstein Calculators</h2>
+    </header>
 
     <!-- MAIN CONTENT -->
     <div class="contentArea">
-        <main>
-            <h1 class="formHeader">Relativistic Length Contraction Calculator</h1>
-            <form id="lengthContractionForm" class="formInvestment">
-            <input class="inputFields" type="number" id="restLengthInput" min="1" step="any" required />
-            <label for="restLengthInput">Rest Length (in meters)</label> <br /><br />
+      <h1 class="formHeader">Relativistic Length Contraction Calculator</h1>
+      <form id="lengthContractionForm" class="formInvestment">
+      <input class="inputFields" type="number" id="restLengthInput" min="1" step="any" required />
+      <label for="restLengthInput">Rest Length (in meters)</label> <br /><br />
 
-            <input class="inputFields" type="number" id="velocityInput" min="0.00001" step="any" required />
-            <label for="velocityInput">Velocity (in km/s)</label> <br /><br />
+      <input class="inputFields" type="number" id="velocityInput" min="0.00001" step="any" required />
+      <label for="velocityInput">Velocity (in km/s)</label> <br /><br />
 
-            <button class="button101" type="submit">Calculate</button>
-            <button class="button101" type="button" id="clearBtn">Clear</button>
-            </form>
+      <button class="button101" type="submit">Calculate</button>
+      <button class="button101" type="button" id="clearBtn">Clear</button>
+      </form>
 
-            <div id="resultArea" class="resultAreaInvestment" aria-live="polite">
-            Speed of light: 299,792.4580 km/s
-            </div>
-        </main>
+      <div id="resultArea" class="resultAreaInvestment" aria-live="polite">
+      Speed of light: 299,792.4580 km/s
+      </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="bottomArea">
-      <footer class="footerArea">
-        <p>📢 Interested in advertising? We welcome partnerships and sponsors. Get in touch to discuss 
-          visibility and collaboration opportunities.</p>
-        <p class="footerDetails">
-          <span>Contact: <a href="mailto:drysoftware1@gmail.com">drysoftware1@gmail.com</a></span>  
-          <span>SVG icon: <a href="https://www.svgrepo.com/svg/241057/european-union-europe">SVG Repo</a></span>
-          <span>Top Area Gradient: <a href="https://mycolor.space/">mycolor.space</a></span>
-        </p>
-      </footer>
-    </div>
+    <footer class="footerArea">
+      <a href="https://einsteincalculators.com/about.html">
+          <img class="footerIcon" src="./assets/images/tory.png" alt="Einstein Calculators developer profile icon">
+      </a>
+      <p>📢 Interested in advertising? 
+          <a href="https://einsteincalculators.com/about.html"><strong>Click</strong></a> for about us and partnerships.
+      </p>
+    </footer>
+    
   </div>
 </body>
 </html>

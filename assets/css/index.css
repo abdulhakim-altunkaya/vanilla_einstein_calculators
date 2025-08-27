@@ -64,11 +64,9 @@
         flex-direction: column;
     }
     
-    .bottomArea {
-        padding: 15px;
-        color: #000000;  
-    }
     .footerArea {
+        margin: 15px;
+        padding-top: 15px;
         border-top:#000000 5px double;
         display: flex;
         flex-direction: row;
@@ -80,10 +78,14 @@
         margin: 8px;
         text-align: justify;
     }
-    .footerDetails {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+    .footerIcon {
+        width: 140px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(71, 69, 58, 0.6); /* yellowish shadow */
+        cursor: pointer;
+    }
+    .footerIcon:hover {
+        box-shadow: 0 8px 16px rgba(71, 69, 58, 0.85);
     }
 }
 @media (max-width: 780px) {
@@ -126,25 +128,22 @@
         display: flex;
         flex-direction: column;
     }
-    .bottomArea {
-        padding: 15px;
-        color: #000000;  
-    }
     .footerArea {
+        margin: 10px;
+        padding-top: 10px;
         border-top:#000000 5px double;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         font-family: "Maven Pro";
         font-size: 13px;
     }
     .footerArea p {
         flex: 1;
-        margin: 4px;
+        margin: 5px;
         text-align: justify;
     }
-    .footerDetails {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
+    .footerIcon {
+        width: 100px;
+        box-shadow: 0 4px 8px rgba(71, 69, 58, 0.6); /* yellowish shadow */
     }
 }
