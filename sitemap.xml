@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://einsteincalculators.com/</loc>
-    <priority>1.00</priority>
+    <loc>https://einsteincalculators.com/index.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://einsteincalculators.com/length-contraction.html</loc>
+    <loc>https://einsteincalculators.com/about.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://einsteincalculators.com/mass-energy-converter.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-
-  <url>
-    <loc>https://einsteincalculators.com/relativistic-kinetic-energy.html</loc>
-  </url>
-
-  <url>
-    <loc>https://einsteincalculators.com/relativistic-mass-calculator.html</loc>
-  </url>
-
   <url>
     <loc>https://einsteincalculators.com/time-dilation.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://einsteincalculators.com/gravitational-time-dilation.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-
+  <url>
+    <loc>https://einsteincalculators.com/length-contraction.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://einsteincalculators.com/relativistic-kinetic-energy.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://einsteincalculators.com/relativistic-mass-calculator.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
