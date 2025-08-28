@@ -1,3 +1,4 @@
-Comment section
-seo tags
-Add Lorentz and other key scientists' converters also
+create the about html
+check all google tags and add them in all files
+recreate sitemap
+
